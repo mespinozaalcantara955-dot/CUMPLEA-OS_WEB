@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Genesis 💐</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#ffdde1,#ee9ca7);
+    position:relative;
+}
+
+/* FLORES FLOTANDO */
+.flower{
+    position:absolute;
+    font-size:30px;
+    animation: float 10s linear infinite;
+    opacity:0.8;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh) rotate(0deg);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* CARTA */
+.card{
+    width:90%;
+    max-width:700px;
+    background: rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(12px);
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+    animation: aparecer 2s ease;
+    z-index:2;
+}
+
+@keyframes aparecer{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+h1{
+    font-size:60px;
+    color:white;
+    margin-bottom:20px;
+    text-shadow:0 0 15px rgba(255,255,255,0.8);
+    animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo{
+    from{
+        text-shadow:0 0 10px white;
+    }
+    to{
+        text-shadow:0 0 30px #ff69b4;
+    }
+}
+
+.mensaje{
+    font-size:26px;
+    color:white;
+    line-height:1.8;
+    margin-top:20px;
+}
+
+.decoracion{
+    font-size:45px;
+    margin:15px 0;
+    animation: latido 1.5s infinite;
+}
+
+@keyframes latido{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.2);}
+    100%{transform:scale(1);}
+}
+
+/* BRILLOS */
+.sparkle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    background:white;
+    border-radius:50%;
+    animation: sparkle 3s infinite;
+}
+
+@keyframes sparkle{
+    0%{
+        transform:scale(0);
+        opacity:0;
+    }
+    50%{
+        transform:scale(1.5);
+        opacity:1;
+    }
+    100%{
+        transform:scale(0);
+        opacity:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- FLORES -->
+<div class="flower" style="left:5%; animation-delay:0s;">🌸</div>
+<div class="flower" style="left:15%; animation-delay:2s;">🌷</div>
+<div class="flower" style="left:25%; animation-delay:4s;">💐</div>
+<div class="flower" style="left:35%; animation-delay:1s;">🌺</div>
+<div class="flower" style="left:45%; animation-delay:3s;">🌸</div>
+<div class="flower" style="left:55%; animation-delay:5s;">🌷</div>
+<div class="flower" style="left:65%; animation-delay:2s;">💮</div>
+<div class="flower" style="left:75%; animation-delay:4s;">🌹</div>
+<div class="flower" style="left:85%; animation-delay:1s;">🌺</div>
+<div class="flower" style="left:95%; animation-delay:3s;">💐</div>
+
+<!-- BRILLOS -->
+<div class="sparkle" style="top:10%; left:20%;"></div>
+<div class="sparkle" style="top:30%; left:80%;"></div>
+<div class="sparkle" style="top:70%; left:15%;"></div>
+<div class="sparkle" style="top:80%; left:70%;"></div>
+<div class="sparkle" style="top:50%; left:50%;"></div>
+
+<!-- CARTA -->
+<div class="card">
+
+    <div class="decoracion">💖🌸💖</div>
+
+    <h1>Genesis</h1>
+
+    <p class="mensaje">
+        ¡FELIZ DÍA! <br><br>
+
+        Que Dios te bendiga y te ayude a cumplir 
+        todas tus metas y sueños. ✨<br><br>
+
+        Que cada flor represente alegría,
+        amor y momentos hermosos en tu vida. 🌷💐
+    </p>
+
+    <div class="decoracion">🌹✨🌸</div>
+
+</div>
+
+</body>
+</html>
